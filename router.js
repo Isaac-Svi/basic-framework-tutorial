@@ -11,6 +11,8 @@ const router = (route) => {
     return {
         users: Users,
         hello: HelloWorld,
+        bob: () => 'Bob',
+        jerry: () => 'Jerry',
     }[route];
 };
 

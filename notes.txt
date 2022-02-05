@@ -1,0 +1,25 @@
+Benefits of a front end framework:
+
+1) Makes code more modular, cleaner, reusable, etc.
+  -- However... that's not enough of a reason for it
+
+2) SPA - single page application
+  -- Improves user experience, because we minify the amount of requests we make to a server.
+  -- With an SPA, we already have a lot of the actual pages the user will be seeing on the front end.  We might have some data that needs to be requested, but if that data doesn't exist in the app yet, the user doesn't just see a blank page.  They see a loader, etc...
+  -- This also allows us to go to new "pages" when there are connection issues.
+
+3) Regular JavaScript is IMPERATIVE. New front end frameworks like Vue and Svelte (not really React) are more DECLARATIVE.
+imperative - writing clearly the logical steps to create a specific result for a computer to understand
+declarative - just writing what you want to happen in plain english, no need to write logical computer steps
+
+Examples:
+IMPERATIVE:
+for (let i = 0; i < 5; i++) {
+    console.log("howdy")
+}
+
+DECLARATIVE:
+write "howdy" 5 times
+
+Because old JavaScript was imperative, whenever we make a change to some data, we needed to also make a change to the state of our application.
+In a front end framework, the data behind our application and what's shown on the page is ONE AND THE SAME.
